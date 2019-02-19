@@ -1,0 +1,10 @@
+@mixin settingFonts($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: uppercase;
+}
+
+@mixin settingColors($fontcolor, $bgcolor) {
+  color:$fontcolor;
+  background-color: $bgcolor;
+}

@@ -1,0 +1,63 @@
+.timeZone{
+  margin-top: 72px;
+  width: 540px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title{ 
+  width: 535px;
+  line-height: 98px;
+  white-space: nowrap;
+  position: relative;
+  margin-bottom: 32px;
+  @include settingFonts(72px,800);
+  &:before,&:after{
+    content: '';
+    position: absolute;
+    right: -2.5px;
+    left: -2.5px;
+  }
+  &:before{
+    top: 0;
+    border-top: 10px solid black;
+  }
+  &:after{
+    bottom: 0;
+    border-bottom: 10px solid black;
+  }
+}
+
+.timeList{
+  border: 1px solid #000000;
+  margin-bottom: 78px;
+  li{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+    border-bottom: 1px solid #000000;
+    @include settingColors(black,white);
+    h3{
+      line-height: 49px;
+      @include settingFonts(36px,700);
+      span{
+        display: block;
+        font-size: 16px;
+        line-height: 22px;
+        font-style: italic;
+        margin-top: 1px;
+      }
+    }
+    .nowTime{
+      @include settingFonts(72px,700);
+    }
+    &:first-child, &:last-child{
+      @include settingColors(white,black);
+    }
+    &:last-child{
+      border-bottom:none;
+    }
+  }
+}
