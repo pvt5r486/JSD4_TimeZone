@@ -31,13 +31,13 @@
 }
 
 .timeList{
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   margin-bottom: 78px;
   li{
     display: flex;
     justify-content: space-between;
     padding: 16px 40px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 2px solid #000000;
     @include settingColors(black,white);
     h3{
       line-height: 49px;
